@@ -1,0 +1,1 @@
+prompt("diga as cartas ai");

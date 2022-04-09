@@ -1,0 +1,43 @@
+* {
+    box-sizing:border-box;
+
+}
+
+body {
+    background-color: #EEF9BF;
+    width: 1100px;
+    height: 629px;
+}
+
+.nome-jogo {
+    background-color: red;
+    width: 530px;
+    max-width: 100%;
+    height: 100px;
+    font-size: 56px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #75B79E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+}
+
+.container {
+    background-color: orange;
+    width: 880px;
+    height: 500px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 250px;
+    overflow: auto;
+}
+
+.cartas-viradas img{
+    background-color: #A7E9AF;
+    width: 130px;
+    height: 160px;
+    border-radius: 10%;
+    margin-left: 30px;
+    margin-top: 20px;
+}
