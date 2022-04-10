@@ -6,14 +6,14 @@
 body {
     background-color: #EEF9BF;
     width: 1100px;
-    height: 629px;
+    height: 620px;
 }
 
 .nome-jogo {
     background-color: red;
     width: 530px;
     max-width: 100%;
-    height: 100px;
+    height: 80px;
     font-size: 56px;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     color: #75B79E;
@@ -26,18 +26,26 @@ body {
 .container {
     background-color: orange;
     width: 880px;
-    height: 500px;
+    height: 540px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     margin-left: 250px;
-    overflow: auto;
+    overflow: hidden;
 }
 
-.cartas-viradas img{
-    background-color: #A7E9AF;
+.carta-normal img{
+    background-color: white;
     width: 130px;
     height: 160px;
     border-radius: 10%;
-    margin-left: 30px;
-    margin-top: 20px;
+    margin: 10px 10px 0 10px;
 }
+
+.carta-normal:active{
+    background-color: black;
+    transform: rotateY(180deg);
+    transition: linear 1000ms;
+    
+    }
+
