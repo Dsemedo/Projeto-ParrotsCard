@@ -2,21 +2,31 @@
 console.log(qntdCartas);
 */
 
-   function virarCarta(){
-      const elemento = document.querySelector(".carta");    
-      elemento.innerHTML = (`<div class ="carta" onclick="virarCarta(this)">
-            <img class="face" src="Fotos/front.png">
-            <img class="back-face" src="Fotos/metalparrot.gif"> 
-            </>`) 
-      elemento.classList.toggle(".escondido") 
-      
+   function virarCarta(elemento){
 
+      const escondido = document.querySelector(".escondido");
+      if (escondido !== null){
+         escondido.classList.toggle("back-face");
+      } else {
+      elemento.classList.toggle("face");
+      }
+
+      console.log(elemento)
    }
    
-   console.log(virarCarta);
 
 
-{/* 
+/* 
+
+
+      elemento.innerHTML = (`<div class ="carta" onclick="virarCarta(this)">
+            <img class="face" src="Fotos/front.png">
+            <img class="back-face .escondido" src="Fotos/metalparrot.gif"> 
+            </>`)
+
+
+
+
 
 elemento.innerHTML = (`<div class ="carta" onclick="virarCarta(this)">
       <img class="back-face face" src="Fotos/front.png">
@@ -41,5 +51,5 @@ elemento.innerHTML = (`<div class ="carta" onclick="virarCarta(this)">
  como deixar a carta virada ao selecionar a 1, e depois selecionar a 2
 function ficarCarta(){
     
-} */}
+} */
 
