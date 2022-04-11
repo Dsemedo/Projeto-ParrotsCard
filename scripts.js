@@ -1,23 +1,47 @@
-/*  let qntdCartas = prompt("Com quantas cartas deseja jogar?");
-console.log(qntdCartas);
-*/
-
-   function virarCarta(elemento){
-
+function flipCarta(virada){
       const escondido = document.querySelector(".escondido");
       if (escondido !== null){
          escondido.classList.toggle("back-face");
       } else {
-      elemento.classList.toggle("face");
+      virada.classList.toggle("face");
       }
-
-      console.log(elemento)
    }
+
+ 
+   const pergunta = prompt("Com qual número (par) de cartas você gostaria de jogar?")
+   const card = [pergunta];
+
+   function numeroCartas(){
+      const container = document.querySelector(".container");
+    for (i = 0; i < pergunta.length; i++){
+
+      container.innerHTML += `
+      <div class="container">${card[indice]}</div>
+    `;
+    }
+    
+     
+   }
+
+   
+   numeroCartas.sort(comparador); 
+
+function comparador() { 
+	return Math.random() - 0.5; 
+}
    
 
 
 /* 
+let qntdCartas = prompt("Com quantas cartas deseja jogar?");
+let tamanhoCartas = [qntdCartas];
+console.log(qntdCartas)
 
+
+ function numeroCartas(){
+      for (let i = 0; i > tamanhoCartas.length; i++)
+      classList.remove(".carta")
+   }
 
       elemento.innerHTML = (`<div class ="carta" onclick="virarCarta(this)">
             <img class="face" src="Fotos/front.png">
@@ -42,14 +66,8 @@ elemento.innerHTML = (`<div class ="carta" onclick="virarCarta(this)">
     innerhtml.container (classlist.add)
 
 
- function trocaCarta(){
-   const carta = document.querySelectorAll(".carta-normal");
-   carta.classlist.toggle("carta-virada");   
-   console.log(carta);
- }
+
  
  como deixar a carta virada ao selecionar a 1, e depois selecionar a 2
-function ficarCarta(){
-    
-} */
-
+function ficarCarta
+*/
